@@ -51,3 +51,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# only really needed when applying this to deploying or staging
+group :development do
+  gem 'capistrano', '~> 3.8'
+  gem 'capistrano-rails', '~> 1.2', '>= 1.2.3'
+  gem 'capistrano-rbenv', '~> 2.1'
+end
+
