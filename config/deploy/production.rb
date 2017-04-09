@@ -1,3 +1,8 @@
+set :stage, :production
+
+# Replace 127.0.0.1 with your server's IP address!
+server '173.230.153.221', user: 'deploy', roles: %w{web app}
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -6,7 +11,6 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-
 
 
 # role-based syntax
